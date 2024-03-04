@@ -1,9 +1,8 @@
 class Task:
-    def __init__(title, summary, dueDate, isAnAssignment):
+    def __init__(self, title:str, summary:str, isAnAssignment:bool):
         self.title = title
         self.summary = summary
-        self.dueDate = dueDate
         self.isAnAssignment = isAnAssignment
 
-myTask = Task('my task', 'do the things', 'tomorrow', false)
-print(myTask.title) 
+myTask = Task('my task', 'do the things', False)
+print(myTask.isAnAssignment) 
